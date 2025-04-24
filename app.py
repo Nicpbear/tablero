@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
-# Título con efecto neón rojo
 st.markdown("""
 <h1 style='text-align: center; 
             color: #ff0000; 
@@ -22,9 +21,8 @@ with st.sidebar:
 
     stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
     stroke_color = st.color_picker("Color de trazo", "#FFFFFF")
-    bg_color = '#000000'  # Fondo negro para mejor contraste
+    bg_color = '#100000' 
 
-# Componente de canvas
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",
     stroke_width=stroke_width,
